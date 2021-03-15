@@ -22,6 +22,11 @@ namespace PhysicsQuestionBank
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            pictureBox1.AllowDrop = true;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Byte[] result = (Byte[])new ImageConverter().ConvertTo(pictureBox1.Image, typeof(Byte[]));
@@ -65,14 +70,6 @@ namespace PhysicsQuestionBank
                 pictureBox1.DoDragDrop(pictureBox1.Image, DragDropEffects.Copy);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            pictureBox1.AllowDrop = true;
-
-            
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             var client = new MongoClient("mongodb+srv://BigFoot:Digger1709@cluster0.yn5ot.mongodb.net/DotaStatBotWeb?retryWrites=true&w=majority");
@@ -91,7 +88,6 @@ namespace PhysicsQuestionBank
             byte[] buffer = docs[0][2].AsByteArray;
 
             pictureBox2.Image = byteArrayToImage(buffer);
-
         }
 
         public Image byteArrayToImage(byte[] bytesArr)
@@ -105,14 +101,4 @@ namespace PhysicsQuestionBank
 
     }
 
-    public class MongoCRUD
-    {
-        private IMongoDatabase db;
-
-        public MongoCRUD(string database)
-        {
-            var client = new MongoClient();
-            db = client.GetDatabase(database);
-        }
-    }
 }
