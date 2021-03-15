@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <li><a href="./index.html">Home</a></li>
+</head>
+
+<body>
+
+    <form onsubmit="return myFunction()">
+        <label for="questiontext">Question Text:</label>
+        <input type="text" id="questiontext" name="questiontext"><br><br>
+        <label for="cars">Choose a car:</label>
+
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+
+        <input type="submit" value="Upload Question">
+    </form><br><br>
+
+    <label for="testtext">Test Text:</label>
+    <input type="text" id="testtext" name="testtext"><br><br>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+    <script src="/test.js"></script>
+
+
+</body>
+
+</html>

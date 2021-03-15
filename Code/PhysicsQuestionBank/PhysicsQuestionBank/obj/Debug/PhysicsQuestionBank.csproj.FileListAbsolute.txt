@@ -28,3 +28,4 @@ C:\GITHUB REPOS\PhyicsQuestionBank\Code\PhysicsQuestionBank\PhysicsQuestionBank\
 C:\GITHUB REPOS\PhyicsQuestionBank\Code\PhysicsQuestionBank\PhysicsQuestionBank\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\GITHUB REPOS\PhyicsQuestionBank\Code\PhysicsQuestionBank\PhysicsQuestionBank\obj\Debug\PhysicsQuestionBank.csproj.CopyComplete
 C:\GITHUB REPOS\PhyicsQuestionBank\Code\PhysicsQuestionBank\PhysicsQuestionBank\bin\Debug\System.Drawing.Common.dll
+C:\GITHUB REPOS\PhyicsQuestionBank\Code\PhysicsQuestionBank\PhysicsQuestionBank\obj\Debug\PhysicsQuestionBank.Form2.resources
